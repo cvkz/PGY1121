@@ -1,10 +1,16 @@
 # EJEMPLO DE USO DE REPOSITORIO
 
 print("DATOS PERSONALES")
-print("-----------------------")
+print("====================================")
 vnom=input("Ingrese su nombre:  ")
-vedad=int(input("Ingrese su edad:  "))
-print("-----------------------")
+while True:
+    try:
+        vedad=int(input("Ingrese su edad:  "))
+        break
+    except:
+        print("Valor no corresponde")
+
+print("====================================")
 print(f"Su nombre es: {vnom}")
 print(f"Su edad es: {vedad}")
-print("Programa finalizado...")
+print("Programa finalizado.................")
